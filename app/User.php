@@ -30,9 +30,4 @@ class User extends Authenticatable
         'bill_name',
         'bill_amount'
     ];
-
-    public function status()
-    {
-        return $this->belongsTo('App\Status','status_id','error_code');
-    }
 }
