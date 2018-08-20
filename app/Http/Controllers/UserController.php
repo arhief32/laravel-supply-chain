@@ -15,7 +15,7 @@ class UserController extends Controller
      */
     public function request($briva_number)
     {
-        $result = User::where('briva_number',$briva_number)->with('status')->first();
+        $result = User::where('briva_number',$briva_number)->first();
         
         return response()->json($result);
     }
